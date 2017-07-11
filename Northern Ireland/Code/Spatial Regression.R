@@ -25,41 +25,41 @@ spplot(LMImap, "Z.Ii")
 #Spatial log-normal Regression Models
 
 #Spatial Lag Model
-mod3SLM <- lagsarlm(log(IS_PropDie) ~ IS_MeanAge + IS_SelfEmp + IS_Level4 + IS_OneCar +
-                    IS_CarDriv + IS_PopDens + IS_MeanRes + IS_RentSoc + IS_Flats, 
+mod7SLM <- lagsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+                    CarDrivLN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                     data = SpatDat, continuity.listw)
-summary(mod3SLM)
+summary(mod7SLM)
 
 #Spatial Error Model
-mod3SEM <- errorsarlm(log(IS_PropDie) ~ IS_MeanAge + IS_SelfEmp + IS_Level4 + IS_OneCar +
-                        IS_CarDriv + IS_PopDens + IS_MeanRes + IS_RentSoc + IS_Flats, 
+mod7SEM <- errorsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+                        CarDrivLN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                       data = SpatDat, continuity.listw)
-summary(mod3SEM)
+summary(mod7SEM)
 
 #Spatial Durbin Model
-mod3SDM <- lagsarlm(log(IS_PropDie) ~ IS_MeanAge + IS_SelfEmp + IS_Level4 + IS_OneCar +
-                      IS_CarDriv + IS_PopDens + IS_MeanRes + IS_RentSoc + IS_Flats, 
+mod7SDM <- lagsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+                      CarDrivLN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                     data = SpatDat, continuity.listw, type = "mixed")
-summary(mod3SDM)
+summary(mod7SDM)
 
 #Spatial Durbin Error Model
-mod3SDEM <- errorsarlm(log(IS_PropDie) ~ IS_MeanAge + IS_SelfEmp + IS_Level4 + IS_OneCar +
-                        IS_CarDriv + IS_PopDens + IS_MeanRes + IS_RentSoc + IS_Flats, 
+mod7SDEM <- errorsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+                         CarDrivLN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                       data = SpatDat, continuity.listw, etype = "emixed")
-summary(mod3SDEM)
+summary(mod7SDEM)
 
 #Simultaneous Autoregressive Model
-mod3SAR <- spautolm(log(IS_PropDie) ~ IS_MeanAge + IS_SelfEmp + IS_Level4 + IS_OneCar +
-                      IS_CarDriv + IS_PopDens + IS_MeanRes + IS_RentSoc + IS_Flats, 
+mod7SAR <- spautolm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+                      CarDrivLN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                     data = SpatDat, listw = continuity.listw, family = "SAR", method = "eigen")
-summary(mod3SAR)
-mod3resSAR <- MCMCsamp(mod3SAR, mcmc = 5000, burnin = 500, listw = continuity.listw)
-summary(mod3resSAR)
+summary(mod7SAR)
+mod7resSAR <- MCMCsamp(mod7SAR, mcmc = 5000, burnin = 500, listw = continuity.listw)
+summary(mod7resSAR)
 
 #Conditional Autoregressive Model
-mod3CAR <- spautolm(log(IS_PropDie) ~ IS_MeanAge + IS_SelfEmp + IS_Level4 + IS_OneCar +
-                      IS_CarDriv + IS_PopDens + IS_MeanRes + IS_RentSoc + IS_Flats, 
+mod7CAR <- spautolm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+                      CarDrivLN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                     data = SpatDat, listw = continuity.listw, family = "CAR", method = "eigen")
-summary(mod3CAR)
-mod3resCAR <- MCMCsamp(mod3CAR, mcmc = 5000, burnin = 500, listw = continuity.listw)
-summary(mod3resCAR)
+summary(mod7CAR)
+mod7resCAR <- MCMCsamp(mod7CAR, mcmc = 5000, burnin = 500, listw = continuity.listw)
+summary(mod7resCAR)
