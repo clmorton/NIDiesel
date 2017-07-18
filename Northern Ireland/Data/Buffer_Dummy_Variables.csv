@@ -70,16 +70,16 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95BB22S2,Scrabo_2,0,0,0,0,1
 95BB23S1,Whitespots_1,0,0,0,0,1
 95BB23S2,Whitespots_2,0,0,0,0,1
-95CC01W1,Abbey Park,0,0,1,0,1
+95CC01W1,Abbey Park,0,0,1,0,0
 95CC02W1,Ballymartrim,1,0,0,0,0
-95CC03W1,Callan Bridge,0,0,1,0,1
+95CC03W1,Callan Bridge,0,0,1,0,0
 95CC04W1,Carrigatuke,1,0,0,0,0
-95CC05W1,Charlemont,0,0,1,0,1
-95CC06S1,Demesne_1,0,0,1,0,1
-95CC06S2,Demesne_2,0,0,1,0,1
+95CC05W1,Charlemont,0,0,1,0,0
+95CC06S1,Demesne_1,0,0,1,0,0
+95CC06S2,Demesne_2,0,0,1,0,0
 95CC07W1,Derrynoose,1,0,0,0,0
-95CC08W1,Downs,0,0,1,0,1
-95CC09S1,Hamiltonsbawn_1,0,0,1,0,1
+95CC08W1,Downs,0,0,1,0,0
+95CC09S1,Hamiltonsbawn_1,0,0,1,0,0
 95CC09S2,Hamiltonsbawn_2,0,0,0,1,0
 95CC10W1,Hockley,0,0,0,1,0
 95CC11W1,Keady,1,0,0,0,0
@@ -89,12 +89,12 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95CC15W1,Loughgall,0,0,0,1,0
 95CC16W1,Markethill,0,1,0,0,0
 95CC17W1,Milford,1,0,0,0,0
-95CC18W1,Observatory,0,0,1,0,1
-95CC19W1,Poyntz Pass,0,0,1,0,1
+95CC18W1,Observatory,0,0,1,0,0
+95CC19W1,Poyntz Pass,0,0,1,0,0
 95CC20S1,Rich Hill_1,0,0,0,1,0
 95CC20S2,Rich Hill_2,0,0,0,0,1
 95CC21W1,Tandragee,0,0,0,0,1
-95CC22W1,The Mall,0,0,1,0,1
+95CC22W1,The Mall,0,0,1,0,0
 95DD01W1,Academy,0,0,0,0,1
 95DD02S1,Ahoghill_1,0,0,0,0,1
 95DD02S2,Ahoghill_2,0,0,0,0,1
@@ -156,7 +156,7 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95FF12W1,Lawrencetown,0,0,0,0,1
 95FF13W1,Loughbrickland,0,0,0,1,0
 95FF14W1,Quilly,0,0,0,0,1
-95FF15W1,Rathfriland,0,0,1,0,1
+95FF15W1,Rathfriland,0,0,1,0,0
 95FF16W1,Seapatrick,0,0,0,0,1
 95FF17W1,The Cut,0,0,0,0,1
 95GG01S1,Andersonstown_1,0,0,0,0,1
@@ -464,7 +464,7 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95MM07W1,Caw,1,0,0,0,0
 95MM08S1,Clondermot_1,0,1,0,0,0
 95MM08S2,Clondermot_2,0,1,0,0,0
-95MM09S1,Claudy_1,0,0,1,0,1
+95MM09S1,Claudy_1,0,0,1,0,0
 95MM09S2,Claudy_2,0,1,0,0,0
 95MM10S1,Creggan Central_1,1,0,0,0,0
 95MM10S2,Creggan Central_2,1,0,0,0,0
@@ -544,11 +544,11 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95NN22W1,Strangford,0,0,0,0,1
 95NN23S1,Tollymore_1,0,0,0,1,0
 95NN23S2,Tollymore_2,0,0,0,0,1
-95OO01W1,Altmore,0,0,1,0,1
+95OO01W1,Altmore,0,0,1,0,0
 95OO02W1,Augher,1,0,0,0,0
 95OO03W1,Aughnacloy,1,0,0,0,0
 95OO04W1,Ballygawley,1,0,0,0,0
-95OO05W1,Ballysaggart,0,0,1,0,1
+95OO05W1,Ballysaggart,0,0,1,0,0
 95OO06W1,Benburb,0,1,0,0,0
 95OO07W1,Caledon,1,0,0,0,0
 95OO08W1,Castlecaulfield,0,1,0,0,0
@@ -562,8 +562,8 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95OO16W1,Fivemiletown,1,0,0,0,0
 95OO17W1,Killyman,0,0,0,1,0
 95OO18W1,Killymeal,0,0,0,1,0
-95OO19W1,Moy,0,0,1,0,1
-95OO20W1,Moygashel,0,0,1,0,1
+95OO19W1,Moy,0,0,1,0,0
+95OO20W1,Moygashel,0,0,1,0,0
 95OO21W1,Mullaghmore,0,0,0,1,0
 95OO22W1,Washing Bay,0,0,0,0,1
 95PP01W1,Ballinamallard,0,0,0,1,0
@@ -572,25 +572,25 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95PP04W1,Boho Cleenish and Letterbreen,1,0,0,0,0
 95PP05W1,Brookeborough,1,0,0,0,0
 95PP06S1,Castlecoole_1,0,0,0,1,0
-95PP06S2,Castlecoole_2,0,0,1,0,1
+95PP06S2,Castlecoole_2,0,0,1,0,0
 95PP07W1,Derrygonnelly,1,0,0,0,0
 95PP08W1,Derrylin,1,0,0,0,0
 95PP09W1,Devenish,0,0,0,1,0
 95PP10W1,Donagh,1,0,0,0,0
 95PP11W1,Erne,0,0,0,1,0
 95PP12W1,Florence Court and Kinawley,1,0,0,0,0
-95PP13W1,Irvinestown,0,0,1,0,1
+95PP13W1,Irvinestown,0,0,1,0,0
 95PP14S1,Kesh Ederney and Lack_1,0,1,0,0,0
 95PP14S2,Kesh Ederney and Lack_2,1,0,0,0,0
-95PP15W1,Lisbellaw,0,0,1,0,1
+95PP15W1,Lisbellaw,0,0,1,0,0
 95PP16W1,Lisnarrick,0,1,0,0,0
 95PP17W1,Lisnaskea,0,1,0,0,0
 95PP18W1,Maguires Bridge,0,1,0,0,0
 95PP19W1,Newtownbutler,1,0,0,0,0
-95PP20W1,Portora,0,0,1,0,1
+95PP20W1,Portora,0,0,1,0,0
 95PP21W1,Rosslea,1,0,0,0,0
-95PP22W1,Rossorry,0,0,1,0,1
-95PP23W1,Tempo,0,0,1,0,1
+95PP22W1,Rossorry,0,0,1,0,0
+95PP23W1,Tempo,0,0,1,0,0
 95QQ01W1,Antiville,0,0,0,0,1
 95QQ02W1,Ballycarry,0,0,0,0,1
 95QQ03W1,Ballyloran,0,0,0,0,1
@@ -609,16 +609,16 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95QQ15W1,Town Parks,0,0,0,0,1
 95RR01S1,Aghanloo_1,0,0,0,0,1
 95RR01S2,Aghanloo_2,0,0,0,1,0
-95RR02W1,Ballykelly,0,0,1,0,1
+95RR02W1,Ballykelly,0,0,1,0,0
 95RR03W1,Coolessan,0,0,0,1,0
 95RR04W1,Dungiven,0,0,0,0,1
 95RR05S1,Enagh_1_Limavady,0,0,0,0,1
 95RR05S2,Enagh_2_Limavady,0,0,0,0,1
 95RR06W1,Feeny,0,0,0,1,0
 95RR07W1,Forest,0,0,0,0,1
-95RR08W1,Glack,0,0,1,0,1
+95RR08W1,Glack,0,0,1,0,0
 95RR09S1,Gresteel_1,0,1,0,0,0
-95RR09S2,Gresteel_2,0,0,1,0,1
+95RR09S2,Gresteel_2,0,0,1,0,0
 95RR10W1,Greystone_Limavady,0,0,0,0,1
 95RR11W1,Magilligan,0,0,0,1,0
 95RR12W1,Rathbrady,0,0,0,0,1
@@ -847,18 +847,18 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95XX24S1,Springhill_1,0,0,0,0,1
 95XX24S2,Springhill_2,0,0,0,0,1
 95XX25W1,Whitehill,0,0,0,0,1
-95YY01W1,Beragh,0,0,1,0,1
+95YY01W1,Beragh,0,0,1,0,0
 95YY02W1,Camowen,0,0,0,0,1
 95YY03W1,Clanabogan,0,0,0,1,0
 95YY04W1,Coolnagard,0,0,0,0,1
 95YY05W1,Dergmoney,0,0,0,0,1
-95YY06W1,Dromore,0,0,1,0,1
+95YY06W1,Dromore,0,0,1,0,0
 95YY07W1,Drumnakilly,0,0,0,1,0
 95YY08W1,Drumquin,1,0,0,0,0
 95YY09W1,Drumragh,0,0,0,0,1
-95YY10W1,Fairy Water,0,0,1,0,1
-95YY11W1,Fintona,0,0,1,0,1
-95YY12W1,Gortin,0,0,1,0,1
+95YY10W1,Fairy Water,0,0,1,0,0
+95YY11W1,Fintona,0,0,1,0,0
+95YY12W1,Gortin,0,0,1,0,0
 95YY13S1,Gortrush_1,0,0,0,0,1
 95YY13S2,Gortrush_2,0,0,0,1,0
 95YY14S1,Killyclogher_1,0,0,0,0,1
@@ -869,7 +869,7 @@ SOA_CODE,SOA_LABEL,FiveKBuff,TenKBuff,FiftKBuff,TwentKBuff,RestIre
 95YY17W1,Owenkillew,0,0,0,0,1
 95YY18W1,Sixmilecross,0,1,0,0,0
 95YY19W1,Strule,0,0,0,1,0
-95YY20W1,Termon,0,0,1,0,1
+95YY20W1,Termon,0,0,1,0,0
 95YY21W1,Trillick,0,0,0,1,0
 95ZZ01W1,Artigarvan,1,0,0,0,0
 95ZZ02W1,Ballycolman,1,0,0,0,0

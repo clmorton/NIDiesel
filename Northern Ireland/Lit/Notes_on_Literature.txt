@@ -11,4 +11,15 @@ Bani et al 2005
 The case of fuel tourism into Switzerland is examined between 1985 and 1997
 The price differential is substantial for petrol, but not diesel
 Gasoline consumption within 5km of the border regions of FR, DE, and IT are considered
+Model 2 indicates that Swiss gas price, Swiss per captia income, foreign per capita income, cross border commuters, and relative gas price (i.e. Swiss to IT/FR/DE) are all significant in gas demand model
+Fuel tourism is estimated to have accounted for 9% of all gas sales in the border region between 1985 - 1997
 
+Leal et al 2009
+
+Investigates the introduction of regionally differentiated Hydrocarbon Retail Sales Tax on diesel demand
+Model focuses on diesel sales in Aragon between 2001-2007 
+A 1% increase in diesel price in Catolonia corresponds with a 1.6% increase in diesel demand in Aragon
+
+Romero-Jordan et al 2012
+
+Examines the price setting behaviour of fuel stations located near the border
