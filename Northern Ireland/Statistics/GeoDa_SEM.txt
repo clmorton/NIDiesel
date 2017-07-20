@@ -1,0 +1,232 @@
+>>07/20/17 13:26:11
+REGRESSION
+----------
+SUMMARY OF OUTPUT: SPATIAL ERROR MODEL - MAXIMUM LIKELIHOOD ESTIMATION 
+Data set            : SOA2011_Linked
+Spatial Weight      : SOA2011_LinkedB
+Dependent Variable  :  PropDiesLN  Number of Observations:  890
+Mean dependent var  :    3.861054  Number of Variables   :   12
+S.D. dependent var  :    0.316630  Degrees of Freedom    :  878
+Lag coeff. (Lambda) :    0.936889
+
+R-squared           :    0.952298  R-squared (BUSE)      : - 
+Sq. Correlation     : -            Log likelihood        :  990.154263
+Sigma-square        :  0.00478231  Akaike info criterion :    -1956.31
+S.E of regression   :   0.0691542  Schwarz criterion     :    -1898.81
+
+-----------------------------------------------------------------------------
+       Variable       Coefficient     Std.Error       z-value    Probability
+-----------------------------------------------------------------------------
+          CONSTANT       4.81084       0.212137         22.678     0.00000
+         MeanAgeLN     -0.161643      0.0382705       -4.22369     0.00002
+         SelfEmpLN     0.0749153      0.0124523         6.0162     0.00000
+          Level4LN    0.00456304      0.0129174       0.353247     0.72390
+          OneCarLN     -0.113001      0.0223948       -5.04584     0.00000
+         CarDrivLN    -0.0938846      0.0280441       -3.34775     0.00081
+          Over30LN     0.0543963     0.00887853        6.12672     0.00000
+            PopDLN    -0.0208977     0.00303986       -6.87455     0.00000
+         MeanResLN      0.388522      0.0479636        8.10036     0.00000
+         RentSocLN    0.00655598     0.00278146        2.35703     0.01842
+           FlatsLN      0.005711      0.0021701        2.63168     0.00850
+         NetTimeLN    -0.0345428      0.0152458       -2.26573     0.02347
+            LAMBDA      0.936889      0.0109481        85.5755     0.00000
+-----------------------------------------------------------------------------
+
+REGRESSION DIAGNOSTICS
+DIAGNOSTICS FOR HETEROSKEDASTICITY 
+RANDOM COEFFICIENTS
+TEST                                     DF      VALUE        PROB
+Breusch-Pagan test                      11       156.9376     0.00000
+
+DIAGNOSTICS FOR SPATIAL DEPENDENCE 
+SPATIAL ERROR DEPENDENCE FOR WEIGHT MATRIX : SOA2011_LinkedB
+TEST                                     DF      VALUE        PROB
+Likelihood Ratio Test                    1       653.9504     0.00000
+============================== END OF REPORT ================================
+
+>>07/20/17 13:25:56
+REGRESSION
+----------
+SUMMARY OF OUTPUT: SPATIAL ERROR MODEL - MAXIMUM LIKELIHOOD ESTIMATION 
+Data set            : SOA2011_Linked
+Spatial Weight      : SOA2011_LinkedB
+Dependent Variable  :  PropDiesLN  Number of Observations:  890
+Mean dependent var  :    3.861054  Number of Variables   :   12
+S.D. dependent var  :    0.316630  Degrees of Freedom    :  878
+Lag coeff. (Lambda) :    0.925757
+
+R-squared           :    0.952102  R-squared (BUSE)      : - 
+Sq. Correlation     : -            Log likelihood        :  993.984223
+Sigma-square        :  0.00480195  Akaike info criterion :    -1963.97
+S.E of regression   :   0.0692961  Schwarz criterion     :    -1906.47
+
+-----------------------------------------------------------------------------
+       Variable       Coefficient     Std.Error       z-value    Probability
+-----------------------------------------------------------------------------
+          CONSTANT       5.41788       0.277778        19.5044     0.00000
+         MeanAgeLN     -0.165576      0.0383523       -4.31724     0.00002
+         SelfEmpLN      0.075844      0.0124877        6.07349     0.00000
+          Level4LN    0.00238018      0.0129147         0.1843     0.85378
+          OneCarLN     -0.109911      0.0224416       -4.89763     0.00000
+         CarDrivLN    -0.0950166      0.0280355       -3.38915     0.00070
+          Over30LN     0.0556776     0.00885284        6.28924     0.00000
+            PopDLN    -0.0219118     0.00305016       -7.18383     0.00000
+         MeanResLN      0.390371      0.0480727        8.12042     0.00000
+         RentSocLN    0.00655971     0.00279078        2.35049     0.01875
+           FlatsLN    0.00570493     0.00217733        2.62015     0.00879
+         NetDistLN    -0.0662745      0.0166336       -3.98437     0.00007
+            LAMBDA      0.925757      0.0121425        76.2411     0.00000
+-----------------------------------------------------------------------------
+
+REGRESSION DIAGNOSTICS
+DIAGNOSTICS FOR HETEROSKEDASTICITY 
+RANDOM COEFFICIENTS
+TEST                                     DF      VALUE        PROB
+Breusch-Pagan test                      11       154.5016     0.00000
+
+DIAGNOSTICS FOR SPATIAL DEPENDENCE 
+SPATIAL ERROR DEPENDENCE FOR WEIGHT MATRIX : SOA2011_LinkedB
+TEST                                     DF      VALUE        PROB
+Likelihood Ratio Test                    1       631.7589     0.00000
+============================== END OF REPORT ================================
+
+>>07/20/17 13:24:27
+REGRESSION
+----------
+SUMMARY OF OUTPUT: SPATIAL ERROR MODEL - MAXIMUM LIKELIHOOD ESTIMATION 
+Data set            : SOA2011_Linked
+Spatial Weight      : SOA2011_LinkedB
+Dependent Variable  :  PropDiesLN  Number of Observations:  890
+Mean dependent var  :    3.861054  Number of Variables   :   12
+S.D. dependent var  :    0.316630  Degrees of Freedom    :  878
+Lag coeff. (Lambda) :    0.928599
+
+R-squared           :    0.952233  R-squared (BUSE)      : - 
+Sq. Correlation     : -            Log likelihood        :  993.803416
+Sigma-square        :  0.00478882  Akaike info criterion :    -1963.61
+S.E of regression   :   0.0692013  Schwarz criterion     :    -1906.11
+
+-----------------------------------------------------------------------------
+       Variable       Coefficient     Std.Error       z-value    Probability
+-----------------------------------------------------------------------------
+          CONSTANT       5.19187       0.245453        21.1522     0.00000
+         MeanAgeLN     -0.162377      0.0382821        -4.2416     0.00002
+         SelfEmpLN      0.075988      0.0124699        6.09372     0.00000
+          Level4LN    0.00486337      0.0129025       0.376933     0.70622
+          OneCarLN     -0.116576      0.0224164        -5.2005     0.00000
+         CarDrivLN    -0.0961293      0.0280199       -3.43075     0.00060
+          Over30LN      0.054211     0.00886773        6.11329     0.00000
+            PopDLN    -0.0201418     0.00304535       -6.61396     0.00000
+         MeanResLN      0.386116      0.0480205        8.04064     0.00000
+         RentSocLN    0.00621834      0.0027889        2.22967     0.02577
+           FlatsLN     0.0056422     0.00217376        2.59559     0.00944
+        DistCrossL    -0.0468178      0.0122854       -3.81083     0.00014
+            LAMBDA      0.928599      0.0118442         78.401     0.00000
+-----------------------------------------------------------------------------
+
+REGRESSION DIAGNOSTICS
+DIAGNOSTICS FOR HETEROSKEDASTICITY 
+RANDOM COEFFICIENTS
+TEST                                     DF      VALUE        PROB
+Breusch-Pagan test                      11       154.4093     0.00000
+
+DIAGNOSTICS FOR SPATIAL DEPENDENCE 
+SPATIAL ERROR DEPENDENCE FOR WEIGHT MATRIX : SOA2011_LinkedB
+TEST                                     DF      VALUE        PROB
+Likelihood Ratio Test                    1       646.6319     0.00000
+============================== END OF REPORT ================================
+
+>>07/20/17 13:21:54
+REGRESSION
+----------
+SUMMARY OF OUTPUT: SPATIAL ERROR MODEL - MAXIMUM LIKELIHOOD ESTIMATION 
+Data set            : SOA2011_Linked
+Spatial Weight      : SOA2011_LinkedB
+Dependent Variable  :  PropDiesLN  Number of Observations:  890
+Mean dependent var  :    3.861054  Number of Variables   :   15
+S.D. dependent var  :    0.316630  Degrees of Freedom    :  875
+Lag coeff. (Lambda) :    0.936615
+
+R-squared           :    0.952353  R-squared (BUSE)      : - 
+Sq. Correlation     : -            Log likelihood        :  990.810565
+Sigma-square        :  0.00477681  Akaike info criterion :    -1951.62
+S.E of regression   :   0.0691145  Schwarz criterion     :    -1879.75
+
+-----------------------------------------------------------------------------
+       Variable       Coefficient     Std.Error       z-value    Probability
+-----------------------------------------------------------------------------
+          CONSTANT       4.66298       0.201656        23.1234     0.00000
+         MeanAgeLN     -0.162832      0.0382759       -4.25417     0.00002
+         SelfEmpLN     0.0743817      0.0124753        5.96232     0.00000
+          Level4LN    0.00697047      0.0129386       0.538736     0.59007
+          OneCarLN     -0.112308      0.0224006       -5.01362     0.00000
+         CarDrivLN    -0.0951366      0.0280437       -3.39245     0.00069
+          Over30LN     0.0542205     0.00888564        6.10204     0.00000
+            PopDLN    -0.0196839     0.00308116       -6.38847     0.00000
+         MeanResLN      0.384813       0.048043        8.00978     0.00000
+         RentSocLN    0.00655865     0.00278044        2.35885     0.01833
+           FlatsLN    0.00566799     0.00216958        2.61249     0.00899
+         FiveKBuff      0.074593      0.0326304          2.286     0.02225
+          TenKBuff     0.0746156      0.0297871        2.50496     0.01225
+         FiftKBuff     0.0525388      0.0249318         2.1073     0.03509
+        TwentKBuff     0.0268189      0.0186823        1.43553     0.15114
+            LAMBDA      0.936615      0.0109783        85.3149     0.00000
+-----------------------------------------------------------------------------
+
+REGRESSION DIAGNOSTICS
+DIAGNOSTICS FOR HETEROSKEDASTICITY 
+RANDOM COEFFICIENTS
+TEST                                     DF      VALUE        PROB
+Breusch-Pagan test                      14       158.1880     0.00000
+
+DIAGNOSTICS FOR SPATIAL DEPENDENCE 
+SPATIAL ERROR DEPENDENCE FOR WEIGHT MATRIX : SOA2011_LinkedB
+TEST                                     DF      VALUE        PROB
+Likelihood Ratio Test                    1       684.4962     0.00000
+============================== END OF REPORT ================================
+
+>>07/20/17 13:07:11
+REGRESSION
+----------
+SUMMARY OF OUTPUT: SPATIAL ERROR MODEL - MAXIMUM LIKELIHOOD ESTIMATION 
+Data set            : SOA2011_Linked
+Spatial Weight      : SOA2011_LinkedB
+Dependent Variable  :  PropDiesLN  Number of Observations:  890
+Mean dependent var  :    3.861054  Number of Variables   :   11
+S.D. dependent var  :    0.316630  Degrees of Freedom    :  879
+Lag coeff. (Lambda) :    0.944455
+
+R-squared           :    0.952500  R-squared (BUSE)      : - 
+Sq. Correlation     : -            Log likelihood        :  987.904188
+Sigma-square        :  0.00476208  Akaike info criterion :    -1953.81
+S.E of regression   :   0.0690078  Schwarz criterion     :     -1901.1
+
+-----------------------------------------------------------------------------
+       Variable       Coefficient     Std.Error       z-value    Probability
+-----------------------------------------------------------------------------
+          CONSTANT       4.66386       0.201277        23.1713     0.00000
+         MeanAgeLN     -0.157296      0.0381611       -4.12189     0.00004
+         SelfEmpLN     0.0744859       0.012419        5.99774     0.00000
+          Level4LN    0.00662727      0.0128987       0.513792     0.60740
+          OneCarLN     -0.114361        0.02235       -5.11685     0.00000
+         CarDrivLN    -0.0942689      0.0280269       -3.36351     0.00077
+          Over30LN     0.0528234     0.00889182        5.94068     0.00000
+            PopDLN    -0.0203866     0.00303334       -6.72084     0.00000
+         MeanResLN      0.387648      0.0478513        8.10108     0.00000
+         RentSocLN    0.00656262     0.00277295        2.36666     0.01795
+           FlatsLN    0.00566312     0.00216359        2.61746     0.00886
+            LAMBDA      0.944455       0.010092        93.5843     0.00000
+-----------------------------------------------------------------------------
+
+REGRESSION DIAGNOSTICS
+DIAGNOSTICS FOR HETEROSKEDASTICITY 
+RANDOM COEFFICIENTS
+TEST                                     DF      VALUE        PROB
+Breusch-Pagan test                      10       153.9876     0.00000
+
+DIAGNOSTICS FOR SPATIAL DEPENDENCE 
+SPATIAL ERROR DEPENDENCE FOR WEIGHT MATRIX : SOA2011_LinkedB
+TEST                                     DF      VALUE        PROB
+Likelihood Ratio Test                    1      1078.4058     0.00000
+============================== END OF REPORT ================================
+
