@@ -21,7 +21,7 @@ describe(Integrated_Spreadsheet)
 #Bivariate Analaysis with Socioeconomics 
 
 pairs.panels(Integrated_Spreadsheet[c(6:17)], method = "spearman", hist.col = "gray80", ellipses = "FALSE", breaks = 25)
-cor1 <- rcorr(as.matrix(Integrated_Spreadsheet[c(6:17)]))
+cor1 <- rcorr(as.matrix(Integrated_Spreadsheet[c(6:17)]), type = "spearman")
 cor1
 cor1$r
 cor1$P
@@ -31,7 +31,7 @@ corrplot(cor1$r, type="upper", order="original",
 #Bivariate Analaysis with Travel 
 
 pairs.panels(Integrated_Spreadsheet[c(6,18:32)], method = "spearman", hist.col = "gray80", ellipses = "FALSE", breaks = 25)
-cor2 <- rcorr(as.matrix(Integrated_Spreadsheet[c(6,18:32)]))
+cor2 <- rcorr(as.matrix(Integrated_Spreadsheet[c(6,18:32)]), type = "spearman")
 cor2
 cor2$r
 cor2$P
@@ -41,7 +41,7 @@ corrplot(cor2$r, type="upper", order="original",
 #Bivariate Analaysis with Household
 
 pairs.panels(Integrated_Spreadsheet[c(6,33:42)], method = "spearman", hist.col = "gray80", ellipses = "FALSE", breaks = 25)
-cor3 <- rcorr(as.matrix(Integrated_Spreadsheet[c(6,33:42)]))
+cor3 <- rcorr(as.matrix(Integrated_Spreadsheet[c(6,33:42)]), type = "spearman")
 cor3
 cor3$r
 cor3$P
@@ -56,6 +56,8 @@ ggplot(Integrated_Spreadsheet, aes(x=DistCross, y=PropDiesel)) +
   ylab("Diesel Cars (%)") +
   theme(axis.title.y=element_text(color = "black", face="bold")) +
   theme(axis.title.x=element_text(color = "black", face="bold")) +
+  theme(axis.text.x=element_text(color = "black", size=12)) +
+  theme(axis.text.y=element_text(color = "black", size=12)) +
   geom_smooth(method=lm,
               se=FALSE)
   
@@ -65,6 +67,8 @@ ggplot(Integrated_Spreadsheet, aes(x=NetDist, y=PropDiesel)) +
     ylab("Diesel Cars (%)") +
     theme(axis.title.y=element_text(color = "black", face="bold")) +
     theme(axis.title.x=element_text(color = "black", face="bold")) +
+    theme(axis.text.x=element_text(color = "black", size=12)) +
+    theme(axis.text.y=element_text(color = "black", size=12)) +
   geom_smooth(method=lm,
               se=FALSE)
 
@@ -74,6 +78,8 @@ ggplot(Integrated_Spreadsheet, aes(x=NetTime, y=PropDiesel)) +
     ylab("Diesel Cars (%)") +
     theme(axis.title.y=element_text(color = "black", face="bold")) +
     theme(axis.title.x=element_text(color = "black", face="bold")) +
+    theme(axis.text.x=element_text(color = "black", size=12)) +
+    theme(axis.text.y=element_text(color = "black", size=12)) +
   geom_smooth(method=lm,
               se=FALSE)
 
@@ -82,7 +88,8 @@ ggplot(Integrated_Spreadsheet, aes(x=NetTime, y=PropDiesel)) +
   Integrated_Spreadsheet$BuffCat <- factor(Integrated_Spreadsheet$BuffCat, levels=c("Five", "Ten", "Fifteen", "Twenty", "Rest of NI"))
   ggplot(Integrated_Spreadsheet, aes(x=Integrated_Spreadsheet$BuffCat, y=PropDiesel)) + geom_boxplot() theme(axis.text.x=element_text(angle=30, vjust=0.8, hjust=1, face="bold"))
   ggbox <- ggplot(Integrated_Spreadsheet, aes(x=Integrated_Spreadsheet$BuffCat, y=PropDiesel)) + geom_boxplot(outlier.shape = NA)
-  ggbox <- ggbox + theme(axis.text.x=element_text(color = "black", angle=30, vjust=0.8, hjust=1))
+  ggbox <- ggbox + theme(axis.text.x=element_text(color = "black", size=12))
+  ggbox <- ggbox + theme(axis.text.y=element_text(color = "black", size=12))
   ggbox <- ggbox + theme(axis.title.x=element_text(color = "black", face="bold"))
   ggbox <- ggbox + theme(axis.title.y=element_text(color = "black", face="bold"))
   ggbox <- ggbox + ylab("Percentage Diesel Cars") + xlab("Super Output Areas with Set Buffers to the Border with the Republic of Ireland")

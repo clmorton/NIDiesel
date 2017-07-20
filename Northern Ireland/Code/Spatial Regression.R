@@ -26,7 +26,7 @@ spplot(LMImap, "Z.Ii")
 
 #Spatial Lag Model
 mod7SLM <- lagsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
-                    CarDrivLN + +Ove30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
+                    CarDrivLN + +Over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                     data = SpatDat, continuity.listw)
 summary(mod7SLM)
 
@@ -38,7 +38,7 @@ summary(mod7SEM)
 
 #Spatial Durbin Model
 mod7SDM <- lagsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
-                      CarDrivLN + over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
+                      CarDrivLN + Over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + DistCrossL, 
                     data = SpatDat, continuity.listw, type = "mixed")
 summary(mod7SDM)
 
