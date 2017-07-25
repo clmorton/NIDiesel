@@ -41,12 +41,16 @@ mod7SDM <- lagsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
                       CarDrivLN + Over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + NetDistLN, 
                     data = SpatDat, continuity.listw, type = "mixed")
 summary(mod7SDM)
+W <- as(continuity.listw, "CsparseMatrix")
+trMatc <- trW(W, type = "mult")
+summary(impacts(mod7SDM, tr=trMatc, R=200), zstats=TRUE, short = TRUE)
 
 #Spatial Durbin Error Model
 mod7SDEM <- errorsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
                          CarDrivLN + Over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + NetDistLN, 
                       data = SpatDat, continuity.listw, etype = "emixed")
 summary(mod7SDEM)
+summary(impacts(mod7SDEM))
 
 #Simultaneous Autoregressive Model
 mod7SAR <- spautolm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
