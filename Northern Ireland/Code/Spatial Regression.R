@@ -2,6 +2,7 @@
 library(spdep)
 library(rgdal)
 library(maptools)
+library(CARBayes)
 
 #Load Data
 setwd(.../Northern Ireland)
@@ -13,6 +14,7 @@ continuity.nb <- poly2nb(SpatDat, queen = TRUE)
 plot(SpatDat, border = "grey")
 plot(continuity.nb, coordinates(SpatDat), add = TRUE, col = "blue")
 continuity.listw <- nb2listw(continuity.nb)
+W <- nb2mat(continuity.nb, style="B")
 summary(continuity.listw)
 
 #Autocorrelation Analysis
@@ -22,7 +24,7 @@ LMIresult <- localmoran(SpatDat$IS_PropDie, continuity.listw)
 LMImap <- spCbind(SpatDat, as.data.frame(LMIresult))
 spplot(LMImap, "Z.Ii")
 
-#Spatial log-normal Regression Models
+#Spatial log-log Regression Models
 
 #Spatial Lag Model
 mod7SLM <- lagsarlm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
@@ -61,9 +63,11 @@ mod7resSAR <- MCMCsamp(mod7SAR, mcmc = 5000, burnin = 500, listw = continuity.li
 summary(mod7resSAR)
 
 #Conditional Autoregressive Model
-mod7CAR <- spautolm(PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
-                      CarDrivLN + Over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + NetDistLN, 
-                    data = SpatDat, listw = continuity.listw, family = "CAR", method = "eigen")
-summary(mod7CAR)
-mod7resCAR <- MCMCsamp(mod7CAR, mcmc = 5000, burnin = 500, listw = continuity.listw)
-summary(mod7resCAR)
+
+form <- PropDiesLN ~ MeanAgeLN + SelfEmpLN + Level4LN + OneCarLN +
+  CarDrivLN + Over30LN + PopDLN + MeanResLN + RentSocLN + FlatsLN + NetDistLN
+
+mod7CAR <- S.CARleroux(formula=form, data=SpatDat,
+                             family="gaussian", W=W, burnin=20000, n.sample=120000, thin=10)
+
+print(mod7CAR)

@@ -52,46 +52,46 @@ corrplot(cor3$r, type="upper", order="original",
 
 ggplot(Integrated_Spreadsheet, aes(x=DistCross, y=PropDiesel)) +
   geom_point(shape=1) + 
-  xlab("Euclidean Distance to Closest Border Crossing (km)") +
-  ylab("Diesel Cars (%)") +
-  theme(axis.title.y=element_text(color = "black", face="bold")) +
-  theme(axis.title.x=element_text(color = "black", face="bold")) +
-  theme(axis.text.x=element_text(color = "black", size=12)) +
-  theme(axis.text.y=element_text(color = "black", size=12)) +
+  xlab("Euclidean Distance to Closest Border Crossing (meters)") +
+  ylab("Percentage Diesel Cars") +
+  theme(axis.title.y=element_text(color = "black", face="bold", size=15)) +
+  theme(axis.title.x=element_text(color = "black", face="bold", size=15)) +
+  theme(axis.text.x=element_text(color = "black", size=15)) +
+  theme(axis.text.y=element_text(color = "black", size=15)) +
   geom_smooth(method=lm,
               se=FALSE)
   
 ggplot(Integrated_Spreadsheet, aes(x=NetDist, y=PropDiesel)) +
     geom_point(shape=1) + 
-    xlab("Network Distance to Closest Fuel Station in the Republic (km)") +
-    ylab("Diesel Cars (%)") +
-    theme(axis.title.y=element_text(color = "black", face="bold")) +
-    theme(axis.title.x=element_text(color = "black", face="bold")) +
-    theme(axis.text.x=element_text(color = "black", size=12)) +
-    theme(axis.text.y=element_text(color = "black", size=12)) +
+    xlab("Network Distance to Closest Fuel Station in the Republic (meters)") +
+    ylab("Percentage Diesel Cars") +
+    theme(axis.title.y=element_text(color = "black", face="bold", size=15)) +
+    theme(axis.title.x=element_text(color = "black", face="bold", size=15)) +
+    theme(axis.text.x=element_text(color = "black", size=15)) +
+    theme(axis.text.y=element_text(color = "black", size=15)) +
   geom_smooth(method=lm,
               se=FALSE)
 
 ggplot(Integrated_Spreadsheet, aes(x=NetTime, y=PropDiesel)) +
     geom_point(shape=1) + 
     xlab("Network Time to to Closest Fuel Station in the Republic (minutes)") +
-    ylab("Diesel Cars (%)") +
-    theme(axis.title.y=element_text(color = "black", face="bold")) +
-    theme(axis.title.x=element_text(color = "black", face="bold")) +
-    theme(axis.text.x=element_text(color = "black", size=12)) +
-    theme(axis.text.y=element_text(color = "black", size=12)) +
+    ylab("Percentage Diesel Cars)") +
+    theme(axis.title.y=element_text(color = "black", face="bold", size=15)) +
+    theme(axis.title.x=element_text(color = "black", face="bold", size=15)) +
+    theme(axis.text.x=element_text(color = "black", size=15)) +
+    theme(axis.text.y=element_text(color = "black", size=15)) +
   geom_smooth(method=lm,
               se=FALSE)
 
 #Boxplots of Buffer Categories against Percentage Diesel and Kruskal Wallis Test
 
   Integrated_Spreadsheet$BuffCat <- factor(Integrated_Spreadsheet$BuffCat, levels=c("Five", "Ten", "Fifteen", "Twenty", "Rest of NI"))
-  ggplot(Integrated_Spreadsheet, aes(x=Integrated_Spreadsheet$BuffCat, y=PropDiesel)) + geom_boxplot() theme(axis.text.x=element_text(angle=30, vjust=0.8, hjust=1, face="bold"))
+  ggplot(Integrated_Spreadsheet, aes(x=Integrated_Spreadsheet$BuffCat, y=PropDiesel)) + geom_boxplot() theme(axis.text.x=element_text(angle=30, vjust=0.8, hjust=1, face="bold", size=15))
   ggbox <- ggplot(Integrated_Spreadsheet, aes(x=Integrated_Spreadsheet$BuffCat, y=PropDiesel)) + geom_boxplot(outlier.shape = NA)
-  ggbox <- ggbox + theme(axis.text.x=element_text(color = "black", size=12))
-  ggbox <- ggbox + theme(axis.text.y=element_text(color = "black", size=12))
-  ggbox <- ggbox + theme(axis.title.x=element_text(color = "black", face="bold"))
-  ggbox <- ggbox + theme(axis.title.y=element_text(color = "black", face="bold"))
+  ggbox <- ggbox + theme(axis.text.x=element_text(color = "black", size=15))
+  ggbox <- ggbox + theme(axis.text.y=element_text(color = "black", size=15))
+  ggbox <- ggbox + theme(axis.title.x=element_text(color = "black", face="bold", size=15))
+  ggbox <- ggbox + theme(axis.title.y=element_text(color = "black", face="bold", size=15))
   ggbox <- ggbox + ylab("Percentage Diesel Cars") + xlab("Super Output Areas with Set Buffers to the Border with the Republic of Ireland")
   ggbox
   
