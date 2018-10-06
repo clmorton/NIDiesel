@@ -4,11 +4,11 @@ Author: Craig Morton
 Contact: c.morton@live.co.uk
 Date: 16/08/2018
 
-This collection of files and folders represents a walkthrough of a project conducted at Loughborough University which examined the demand for Hdiesel vehicles in Northern Ireland from a spatial perspective.
+This collection of files and folders represents a walkthrough of a project conducted at Loughborough University which examined the demand for diesel cars in Northern Ireland from a spatial perspective.
 
 The project has been built in the R statistical programming language (https://www.r-project.org/) with the aid of the RStudio (https://www.rstudio.com/) project management overlay. The analysis also requires  the use of a number of R packages.  
 
-The analysis has been published in the Journal of Transport Policy and can be viewed at the following URL:
+The analysis has been published in Transportation Research Part D: Transport and the Environment and can be viewed at the following URL:
 
 http://eprints.whiterose.ac.uk/132176/
 
